@@ -1,6 +1,8 @@
-torch>=2.0.0+cu117
+torch
 dcls
 wandb
 pillow
 h5py
 tqdm
+spikingjelly
+torchaudio

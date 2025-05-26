@@ -1,4 +1,4 @@
-from spikingjelly.activation_based import surrogate
+from spikingjelly.activation_based.surrogate import ATan
 
 class Config:
     
@@ -20,7 +20,8 @@ class Config:
     time_step = 10
     n_bins = 5
 
-    epochs = 150
+    # epochs = 150
+    epochs = 1
     batch_size = 256
 
     ################################################
@@ -51,7 +52,7 @@ class Config:
 
     v_threshold = 1.0
     alpha = 5.0
-    surrogate_function = surrogate.ATan(alpha = alpha)#FastSigmoid(alpha)
+    surrogate_function = ATan(alpha = alpha)#FastSigmoid(alpha)
 
     init_w_method = 'kaiming_uniform'
 
@@ -115,7 +116,8 @@ class Config:
     dropout_p_finetuning = 0
     stateful_synapse_learnable_finetuning = False
     spiking_neuron_type_finetuning = 'lif'
-    epochs_finetuning = 30
+    # epochs_finetuning = 30
+    epochs_finetuning = 1
 
 
     ################################################

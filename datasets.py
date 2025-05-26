@@ -9,7 +9,7 @@ from typing import Callable, Optional
 import torchvision.transforms as transforms
 
 from spikingjelly.datasets.shd import SpikingHeidelbergDigits
-from spikingjelly.datasets.shd import SpikingSpeechCommands
+# from spikingjelly.datasets.shd import SpikingSpeechCommands
 from spikingjelly.datasets import pad_sequence_collate
 
 import torch
@@ -208,7 +208,7 @@ class BinnedSpikingHeidelbergDigits(SpikingHeidelbergDigits):
 
 
 
-class BinnedSpikingSpeechCommands(SpikingSpeechCommands):
+class BinnedSpikingSpeechCommands(SPEECHCOMMANDS):
     def __init__(
             self,
             root: str,
